@@ -148,8 +148,7 @@ ${JSON.stringify(payload, null, 2)}
 
     // вызов OpenAI
     const response = await openai.responses.create({
-      model: "gpt-5.1",
-      max_output_tokens: 1200,
+      model: "gpt-4.1-mini",
       input: fullPrompt,
       // при желании позже сюда добавим max_output_tokens и temperature
     });
